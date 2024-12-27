@@ -1,0 +1,1 @@
+This repository demonstrates an uncommon error in HTML related to event listeners. The bug.html file contains code where an event listener is attached to an element, and then that element is removed from the DOM, leading to unexpected behavior. The bugSolution.html file provides a solution to this problem.
