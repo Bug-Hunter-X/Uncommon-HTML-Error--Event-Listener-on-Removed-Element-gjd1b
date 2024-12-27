@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Error Solution</title>
+</head>
+<body>
+  <div id="myDiv">
+    This is some text.
+  </div>
+  <script>
+    // Correct way of adding event listener that handles the case where element may be removed from DOM
+    const myDiv = document.getElementById('myDiv');
+    myDiv.addEventListener('click', function() {
+      if (myDiv.parentElement) {
+        alert('This is an alert!');
+      }
+    });
+  </script>
+</body>
+</html>
